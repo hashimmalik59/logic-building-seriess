@@ -6,11 +6,9 @@ const wordToCheck = "Fake";
 // Agar word mil jaye to console karo "Message Blocked!"
 // Agar na mile to console karo "Message Sent!"
 
-for (let i = 0; i < bannedWords.length; i++) {
-    if (bannedWords.includes(wordToCheck)) {
-        console.log("Message Blocked!");
-    }
-    else {
-        console.log("Message Sent!");
-    }
+if (bannedWords.includes(wordToCheck)) {
+    console.log("Message Blocked!");
+}
+else {
+    console.log("Message Sent!");
 }
